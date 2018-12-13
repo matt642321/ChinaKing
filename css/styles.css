@@ -1,0 +1,406 @@
+/*Universal Styles */
+html, body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+.container{
+  display: flex;
+  text-align: center;
+}
+/* Navbar Styles */
+.navbar{
+    width: 100%;
+    z-index: 1;
+    background-color: #bc1c39;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.62);
+  
+}
+.navbar ul{
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 15%;
+  
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.45rem;
+  display: block;
+  padding: 0.375rem;
+  
+}
+.navbar a:hover {
+  background-color: #a31630;
+}
+
+.logo{
+  display: none;
+  color: white;
+  font-size: 2rem;
+  float: left;
+  padding-left: 10px;
+}
+/* Image container styles */
+.img-container {
+  width: 100%;
+}
+.img-container img{
+  width: 100%;
+  max-height: 35rem;
+  height: auto;
+  opacity: 0.7;
+  border-bottom: 1px solid black;
+}
+/* Image caption styles */
+.img-caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.img-caption h1{
+  font-size: 2.5rem;
+}
+.img-caption p {
+  font-size: 1.25rem;
+}
+.img-button{
+  position: absolute;
+}
+.home-button {
+  background-color: #bc1c39;
+  color: white;
+  text-align: center;
+  border: 1px solid #a31630;
+  padding: 15px 32px;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.18);
+  font-family: 'Roboto Slab', serif;
+  outline: none;
+}
+.home-button:hover{
+  background-color: #a31630;
+  cursor: hand;
+  box-shadow:0 12px 16px 0 rgba(0,0,0,0.22), 0 17px 50px 0 rgba(0,0,0,0.25); 
+  border-color: #8e1229;
+  transition: background-color 0.2s;
+}
+.home-button:active{
+transform: translateY(4px);
+outline: none;
+}
+/* Info Div Styles */
+.desc{
+  width: 100%;
+  overflow: visible;
+  text-align: center;
+  height: auto;
+  
+}
+
+.desc img{
+  height: auto;
+  width: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left-desc h1{
+  text-align: center;
+}
+
+.left-desc p{
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.right-desc{
+  width: 100%;
+  overflow: auto;
+  word-wrap: break-word;
+  text-align: center;
+  overflow: visible;
+ 
+}
+
+.right-desc img {
+  height: auto;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.right-desc p{
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-desc h1 {
+  text-align: center;
+}
+
+/*Footer Styles */
+footer {
+  background-color: #bc1c39;
+  color: white;
+  margin-top: 10px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+#menu-footer {
+  background-color: #bc1c39;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.list-container{
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-list{
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.375rem;
+  
+}
+
+.footer-list a:hover {
+  background-color: #a31630;
+}
+
+.footer-list li {
+  list-style-type: none;
+  display: inline-block;
+  width: 15%;
+}
+
+
+.footer-contact ul{
+  float: right;
+  list-style-type: none;
+  text-align: right;
+  
+}
+
+
+
+
+
+/* MENU PAGE STYLES */
+
+.menu-categories-container{
+  display: flex;
+  width: 100%;
+  
+}
+
+.menu-categories{
+  margin-bottom: -10px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#menu-item-lists{
+  margin-bottom: -10px;
+  width: 100%;
+}
+
+.menu-category{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 15px 32px;
+  font-family: 'Roboto Slab', serif;
+  
+}
+
+.menu-category:active{
+  outline: none;
+ 
+ 
+}
+.menu-category:hover{
+  background-color: darkgray;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.menu-category:focus{
+ background-color: darkgray;
+ transition background-color: 0.2s;
+}
+/* Lists of menu items */
+.menu-list{
+  text-align: left;
+  display: none;
+  
+}
+.menu-list h2, h4 {
+  text-align: center;
+  
+}
+
+/* Menu Item Table Styles */
+ .menu-table{
+  width: 100%;
+  border-collapse: collapse;
+   
+}
+
+ .menu-table td, th{
+  text-align: left;
+  border-bottom: 1px solid gray;
+}
+.menu-table tr:nth-child(even) {
+  background-color: #9a9ca0;
+}
+.chef-item-desc{
+  text-align: left;
+  font-style: italic;
+  font-size: 0.825rem;
+}
+
+
+
+/* ABOUT PAGE STYLES */
+.about-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  
+  
+}
+.about-text{
+  width: 50%;
+ 
+}
+.about-img{
+  width: 100%;
+  height: 80%;
+  border: 1px solid black;
+  
+}
+
+.about-img-container{
+  padding-top: 10px;
+  width: 60%;
+  
+  
+
+}
+.about-container p{
+  padding-left: 10px;
+}
+.about-footer {
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+
+
+/* CONTACT PAGE STYLES */
+/* table for contact */
+.contact{
+  margin-top: 10px;
+ display: flex;
+ width: 100%;
+ 
+}
+.contact-table{
+  width: 100%;
+  padding: 1%
+}
+.contact-table td{
+  border-bottom: 1px solid black;
+}
+.map{
+  width: 100%;
+
+}
+.map iframe{
+  height: 25rem;
+  width: 45rem;
+  border: 1px solid black;
+}
+.map p{
+  text-align: center;
+}
+.front{
+  width: 100%;
+  padding-left: 10px;
+}
+.front img{
+  width: 100%;
+  border: 1px solid black;
+ 
+}
+
+/* TESTIMONIAL PAGE STYLES */
+  .reviews-table{
+    table: 100%;
+  }
+.reviews{
+  column-width: 50%;
+  border-style: solid;
+   border-collapse: collapse;
+}
+.reviews td {
+  border-style: solid;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0; 
+  
+}
+.reviews img{
+  display: block;
+}
+ /* table for culture */
+
+.culture{
+   border-style: solid;
+   border-collapse: collapse;
+}
+.culture td {
+  border-style: solid;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+.culture img {
+  display: block;
+}  
